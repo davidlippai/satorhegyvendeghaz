@@ -88,7 +88,6 @@ h1, h2 {
 button {
   margin: 0 auto;
   text-align: center;
-  font-family: Quattrocento, Arial, serif;
   width: 50%;
   float: left;
   font-size: 1rem;
@@ -97,7 +96,7 @@ button {
   letter-spacing: 0.25rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  color: black;
+  color: gainsboro;
   border-left: none;
   border-top: none;
 }
