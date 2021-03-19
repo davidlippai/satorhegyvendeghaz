@@ -89,7 +89,7 @@ button {
   margin: 0 auto;
   text-align: center;
   font-family: Quattrocento, Arial, serif;
-  width: 49.5%;
+  width: 50%;
   float: left;
   font-size: 1rem;
   background-color: rosybrown;
@@ -102,9 +102,6 @@ button {
   border-top: none;
 }
 
-.main-menu {
-  margin: 0 auto;
-}
 
 .main,{
   margin: 0 auto;
@@ -139,10 +136,6 @@ a {
 
 .contact {
   text-align: center;
-}
-
-.contact-person {
-  margin-bottom: 1rem;
 }
 
 .artist {
