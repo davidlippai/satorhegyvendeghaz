@@ -47,159 +47,128 @@ table {
 /*====CSS RESET END=====*/
 
 
+body {
+  font-family: 'Fanwood Text', Arial, serif;
+  background: linear-gradient(rgba(235, 184, 139),white,rgba(235, 184, 139),white,rgba(235, 184, 139),white);
+}
+
+/*==HEADER==*/
+
 .header {
+  backgroud: grey;
+}
+
+.picture {
+  margin: 0 auto;
   width: 100%;
-  background-color: gainsboro;
+}
+
+h1 {
+  font-size: 1.6rem;
+  letter-spacing: 0.25rem;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: -4rem;
+  background: linear-gradient(rgba(235, 184, 139), rgba(255,255,255, .5));
+  border-bottom: solid 1px black;
+  font-weight: bold;
+  font-style: oblique;
+}
+h1,h2,h3 {
+  text-align: center;
+}
+
+/*==Main MENU==*/
+
+.main-menu {
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  margin-top: -4rem;
+}
+
+.menu-link{
+  font-size: 1.25rem;
+  background: rgba(255, 255, 255, .6);
+  border-top: solid 1px white;
+  letter-spacing: 0.125rem;
+  padding: 0.15rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-link:hover {
+  color: white;
+  background: rgba(0, 0, 0, .6);
+}
+
+/*==CONTENT==*/
+
+.content {
+  position: relative;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.75rem;
+  font-family: bold;
+}
+.foot-info {
+  background: brown;
+}
+
+.main-picture {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: solid 1px white;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, .5);
+}
+
+figcaption {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.35rem;
+}
+
+.main-picture:hover {
+  transform:scale(1.05);
+  transition: ease-in-out 0.4s;
+}
+
+figure {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 5px;
+
 }
 
 hr {
-  border: solid 1px gainsboro;
+  margin: 0.75rem;
 }
 
-body {
-  font-family: 'Fanwood Text', Arial, serif;
-  font-size: 1.125rem;
-  line-height: 1rem;
-  color: black;
-  width: 100vw;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: gainsboro;
-}
-
-h1, h2 {
-  font-family: Quattrocento, Arial, serif;
-  font-size: 1rem;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 0.5rem;
-}
-
-
-.picture {
-  width: 100%;
-}
-
-.header-picture {
-  width: 100%;
-}
-
-button {
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
-  float: left;
-  font-size: 1rem;
-  background-color: rosybrown;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  color: gainsboro;
-  border-left: none;
-  border-top: none;
-}
-
-
-.main,{
-  margin: 0 auto;
-  width: 96%;
-}
-
-.footer-down {
-  background-color: rosybrown;
-  color: black;
-  font-size: 0.85rem;
-  width: 100%;
-}
-
-li {
-  color: black;
+p {
   padding: 0.5rem;
 }
 
-a {
-  color: black;
+/*==FOOTER==*/
+
+.foot-info {
+  background: rgba(255, 255, 255, .7);
 }
 
-.first-paraghraf {
+h3 {
   padding: 0.5rem;
-}
-
-.media {
-  width: 50%;
-  float: left;
-  text-align: center;
-}
-
-.contact {
-  text-align: center;
-}
-
-.artist {
-  text-align: center;
-  background-color: gainsboro;
-  color: black;
-  font-size: 0.65rem;
-  padding: 0.25rem;
-  border-top: solid 2px beige;
-}
-
-.place-name {
-  background-color: rosybrown;
-  color: gainsboro;
-  margin-bottom: -2.5rem;
-  letter-spacing: 0.5rem;
-  font-family: 'Fanwood Text', Arial, serif;
-  padding: 0.5rem;
-  max-width: 100%;
-  position: relative;
-}
-
-/*====FROM 768px====*/
-
-@media (min-width: 768px) {
-  .main-menu {
-    margin-top: -20rem;
-    position: relative;
-    width: 100%;
-  }
-  
-  button {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.75rem;
-    width: 25%;
-  }
-  
-  .main {
-    margin-top: 20rem;
-  }
-  
-  .place-name {
-    width: 100%;
-  }
-}
-
-/*====FROM 1024px===*/
-
-@media (min-width: 1024px) {
-  .place-name {
-    font-size: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  
-  .main {
-    font-size: 1.5rem;
-  }
-  
-  h1 {
-    font-size: 1.75rem;
-  }
-  
-  .footer-down, .media {
-    font-size: 1rem;
-  }
+  border-top: solid 1.5px black;
+  border-bottom: solid 1.5px black;
+  background: white;
 }
