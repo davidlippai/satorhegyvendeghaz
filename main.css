@@ -48,19 +48,18 @@ table {
 
 
 body {
+  min-width: 375px;
   font-family: 'Fanwood Text', Arial, serif;
   background: linear-gradient(rgba(235, 184, 139),white,rgba(235, 184, 139),white,rgba(235, 184, 139),white);
 }
 
 /*==HEADER==*/
 
-.header {
-  backgroud: grey;
-}
 
 .picture {
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
+  border-bottom: solid 1px black;
 }
 
 h1 {
@@ -72,7 +71,6 @@ h1 {
   background: linear-gradient(rgba(235, 184, 139), rgba(255,255,255, .5));
   border-bottom: solid 1px black;
   font-weight: bold;
-  font-style: oblique;
 }
 h1,h2,h3 {
   text-align: center;
@@ -82,26 +80,40 @@ h1,h2,h3 {
 
 .main-menu {
   text-align: center;
-  padding: 1rem;
   position: relative;
-  margin-top: -4rem;
+  
+}
+
+.menu-button {
+  align-items: center;
+  width: 90%;
+  margin: 2% auto;
+  padding: 1%;
+  background: white;
+  letter-spacing: 0.125rem;
+  border-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom: solid 1px grey;
+  border-top: solid 1px black;
+  border-left: solid 1px black;
+  border-right: solid 1px grey;
 }
 
 .menu-link{
   font-size: 1.25rem;
-  background: rgba(255, 255, 255, .6);
+  background: pink;
   border-top: solid 1px white;
   letter-spacing: 0.125rem;
-  padding: 0.15rem;
   border-radius: 5px;
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
-.menu-link:hover {
+.menu-button:hover {
   color: white;
-  background: rgba(0, 0, 0, .6);
+  background: linear-gradient(90deg, rgba(235, 184, 139), rgba(255,255,255, .1));
 }
 
 /*==CONTENT==*/
@@ -110,10 +122,11 @@ h1,h2,h3 {
   position: relative;
   margin-top: 1rem;
   font-size: 1.25rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
+  
 }
 
 h2 {
@@ -170,5 +183,34 @@ h3 {
   padding: 0.5rem;
   border-top: solid 1.5px black;
   border-bottom: solid 1.5px black;
+  background: rgba(224, 154, 92, 0.4);
+  font-size: 1.125rem;
+}
+
+ul {
+  text-align: center;
   background: white;
+}
+
+li {
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  
+}
+
+.brown {
+  background: rgba(0, 0, 0, .1);
+}
+
+a {
+  text-decoration:  none;
+}
+
+a:visited {
+  color: black;
+}
+
+.contact-link:hover {
+  background: black;
+  color: white;
 }
