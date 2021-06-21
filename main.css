@@ -214,3 +214,20 @@ li:hover {
   background: rgb(202, 172, 172);
   color: white;
 }
+
+.galery-foto {
+  width: 80%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 15px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: solid 1px white;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, .5);
+
+}
+
+.galery-foto:hover {
+  transform:scale(1.05);
+  transition: ease-in-out 0.4s;
+}
