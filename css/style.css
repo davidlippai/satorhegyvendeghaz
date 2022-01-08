@@ -1,0 +1,208 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Andada Pro", serif;
+}
+
+body {
+    background: linear-gradient(#9a8478,#1e130c);
+    transition: all ease-in-out 0.5s;
+}
+
+/*===========GRID BASIC============*/
+
+div#wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0.5rem auto;
+    color: white;
+}
+
+/*------------HEADER START----------*/
+
+header {
+    grid-column: 1/13;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1 {
+
+    letter-spacing: 0.25rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: "Ephesis", cursive;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 200;
+    color: rgb(122, 8, 8);
+    text-shadow: .5rem -.15rem .5rem #afacac;
+
+}
+
+h2 {
+    grid-column: 1/6;
+    text-align: center;
+    padding: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-size: 1.75rem;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: "Ephesis", cursive;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgb(24, 2, 2);
+}
+
+/*-----------HAM-MENU-START-----------*/
+
+div#ham-menu-lines {
+    padding: 0.5rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+div.classOfLines {
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    width: 50px;
+    border-radius: 1rem;
+    margin: 0.65rem;
+
+}
+
+ul {
+    list-style-type: none;
+    display: none;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+}
+
+#menu-list li {
+    padding: 0.5rem;
+    padding-left: 0.25rem;
+    transition: all ease-in-out 0.5s;
+    letter-spacing: 0.15rem;
+
+}
+
+.visible-menu {
+    display: block;
+}
+
+/*----------HAM-MENU-END-------------*/
+
+
+/*------------HEADER END----------*/
+
+/*===========SECTION START==============*/
+
+section {
+    grid-column: 1/13;
+}
+
+
+/*-------------First-Paragraph--------------*/
+
+article#first {
+    color: rgba(255, 255, 255, 0.842);
+    padding: 1rem;
+}
+
+p#first-paragraph {
+    text-align: justify;
+    font-style: italic;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #1e130c;
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+
+
+button.Btn {
+    display: block;
+    margin: 2rem auto;
+    font-size: 1.75rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.788);
+    color: rgba(80, 52, 16, 0.753);
+    font-variant: small-caps;
+    transition: all ease-in-out 0.25s;
+}
+
+button.Btn:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+    transition: all ease-in-out 0.25s;
+    color: rgba(31, 19, 4, 0.753);
+    border: solid 1px rgb(122, 8, 8);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.5rem 0.75rem rgba(26, 26, 26, 0.541);
+}
+
+/*-----------SECOND Paragraph-----------*/
+img#panoramaImg {
+    width: 100vw;
+    filter: grayscale(100%);
+    transition: all ease-in-out 0.35s;
+}
+
+img#panoramaImg:hover {
+    filter: grayscale(40%);
+    transition: all ease-in-out 0.35s;
+}
+
+
+
+/*-------------FOOTER--------------*/
+
+footer {
+    grid-column: 1/13;
+    background-color: rgba(255, 255, 255, 0.944);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    filter:grayscale(100%);
+    transition: all ease-in-out 0.35s;
+}
+
+footer:hover {
+    filter:grayscale(0%);
+    background-color: rgb(255, 255, 255);
+    transition: all ease-in-out 0.35s;
+}
+
+footer div#icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div#icons a {
+    color: rgb(94, 13, 13);
+    font-size: 2rem;
+    padding: 0.75rem;
+    transition: all ease-in-out 0.35s;
+    width: 20%;
+    text-align: center;
+}
+
+footer div#icons a:hover {
+    border-radius: 50%;
+    transition: all ease-in-out 0.35s;
+    color: rgb(122, 8, 8);
+    margin-top: -1rem;
+    padding-top: 2rem;
+    background-color: white;
+}
+
+#points {
+    margin-top: -2rem;
+    z-index: 1;
+}

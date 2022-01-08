@@ -1,117 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="David Lippai" />
-        <meta
-            name="description"
-            content="Sátorhegy vendégház, Abaújszántón festői környezetben, ha nyugalomra és pihenésre vágyik!"
-        />
-        <meta
-            name="keywords"
-            name="Abaújszántó, Sátorhegyvendégház, Borsod, Nyaraló, pihenés, olcsó szállás"
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="stylesheet" href="css/style.css" />
+        <meta name="author" content="David Lippai" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script
+            src="https://kit.fontawesome.com/200efc0699.js"
+            crossorigin="anonymous"
+        ></script>
         <link
-            href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Ephesis&display=swap"
             rel="stylesheet"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
-            rel="stylesheet"
-        />
-        <title>Sátorhegy Vendégház</title>
+        <title>Sátorhegy-vendégház</title>
     </head>
     <body>
-        <header>
-            <h1>Sátorhegy vendégház</h1>
-            <img
-                id="panorama"
-                src="assets/abaujszanto.jpg"
-                alt="Abaújszántó tájkép"
-            />
-            <div id="welcome">
-                <h2>Üdvözöljük Weboldalunkon</h2>
-            </div>
-        </header>
-        <nav>
-            <ul>
-                <li id="activLi"><a href="" id="activ">Főoldal</a></li>
-                <li><a href="#">Galéria</a></li>
-                <li><a href="#">Foglalás</a></li>
-                <li><a href="#">Kapcsolat</a></li>
-            </ul>
-        </nav>
-        <main class="content">
-            <div class="firstParagraph">
-                <h2>A falu közepén</h2>
-                <article>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Eveniet omnis autem ducimus velit quo sit delectus
-                    blanditiis rerum fugit minima, cumque quidem esse fugiat
-                    molestiae dolorum voluptates vitae quasi ipsam?
-                    <img src="assets/main1.jpg" alt="Ház" />
+        <div id="wrapper">
+            <header>
+                <div id="ham-menu-lines">
+                    <div class="classOfLines"></div>
+                    <div class="classOfLines"></div>
+                    <div class="classOfLines"></div>
+                    <ul id="menu-list">
+                        <li>Főoldal</li>
+                        <li>Foglalás</li>
+                        <li>Galéria</li>
+                        <li>Kapcsolat</li>
+                    </ul>
+                </div>
+                <h1>Sátorhegy <br />vendégház</h1>
+            </header>
+            <section>
+                <article id="first">
+                    <h2>
+                        Isten hozta <br />
+                        Weboldalunkon!
+                    </h2>
+                    <p id="first-paragraph">
+                        Csendes, nyugodt és békés környezetre vágyik? Hallani
+                        szeretné a fák susogását és a madarak csiripelését?
+                        Szálljon meg nálunk, és tapasztalja meg Ön is!
+                    </p>
+                    <button class="Btn" id="bookBtn" type="submit">
+                        Foglalás
+                    </button>
                 </article>
-                <article>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Eveniet omnis autem ducimus velit quo sit delectus
-                    blanditiis rerum fugit minima, cumque quidem esse fugiat
-                    molestiae dolorum voluptates vitae quasi ipsam?
-                    <figure>
-                        <img src="assets/main2.jpg" alt="Ház" />
-                        <figcaption>Ez egy ház</figcaption>
-                    </figure>
+                <article id="second-paragraph">
+                    <h2>Abaújszántó</h2>
+                    <img
+                        id="panoramaImg"
+                        src="img/abaujszanto.jpg"
+                        alt="Abaújszántó_tájkép"
+                    />
+                    <button class="Btn" id="galleryBtn">
+                        <a href="#">Galéria</a>
+                    </button>
                 </article>
-            </div>
-            <div class="secondParagraph">
-                <h2>Az erdő szélén</h2>
-                <article>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Eveniet omnis autem ducimus velit quo sit delectus
-                    blanditiis rerum fugit minima, cumque quidem esse fugiat
-                    molestiae dolorum voluptates vitae quasi ipsam?
+                <article id="first-paragraph">
+                    <h2>
+                        Isten hozta <br />
+                        Weboldalunkon!
+                    </h2>
+                    <p id="first">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium, consequuntur. Vel earum commodi ea incidunt.
+                    </p>
+                    <button id="bookBtn" type="submit">Foglalás</button>
                 </article>
-            </div>
-        </main>
-        <footer>
-            <table>
-                <tr>
-                    <th>GY.I.K</th>
-                    <th>
-                        <i
-                            class="fa fa-2x fa-facebook-square"
-                            aria-hidden="true"
-                        ></i>
-                    </th>
-                    <th><i class="fa fa-2x fa-bed" aria-hidden="true"></i></th>
-                    <th>
-                        <i
-                            class="fa fa-2x fa-map-marker"
-                            aria-hidden="true"
-                        ></i>
-                    </th>
-                </tr>
-            </table>
-            <p>
-                Minden jog fenntartva ©
-                <span id="author">David Lippai</span>
-            </p>
-        </footer>
+            </section>
+            <footer>
+                <div id="icons">
+                    <a href="#"
+                        ><i id="points" class="fas fa-ellipsis-v"></i
+                    ></a>
+                    <a href="#"><i class="fas fa-home"></i></a>
+                    <a href="#"><i class="far fa-image"></i></a>
+                    <a href="#"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </footer>
+        </div>
+        <script src="app.js"></script>
     </body>
 </html>
